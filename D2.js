@@ -104,16 +104,28 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let numb7 = 10;
-let numb8 = 11;
-let numb9 = 12;
+let numb7 = 25;
+let numb8 = 15;
+let numb9 = 35;
 
-if (numb7 > numb8 && numb8 > numb9)
-  if (numb8 > numb9) {
-    console.log(numb7, numb8, numb9);
-  } else {
-    console.log(numb8, numb7, numb9);
-  }
+if (numb7 < numb8) {
+  let prot = numb7; // variabile prot è il numb7 poi se il numb7 lo equivalgo al numb8 gli cambio il valore
+  numb7 = numb8;
+  numb7 = prot;
+}
+
+if (numb8 < numb9) {
+  let prot = numb8;
+  numb8 = numb9;
+  numb9 = prot;
+}
+
+if (numb7 < numb8) {
+  let prot = numb7;
+  numb7 = numb8;
+  numb8 = prot;
+}
+console.log(numb7, numb8, numb9);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
