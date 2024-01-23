@@ -50,11 +50,16 @@ if (numb4 % numb3 === 0) {
 
 let numb5 = 4;
 let numb6 = 4;
+if (numb5 === 8) {
+  console.log("numero uguale a 8");
+} else {
+  console.log("numero non uguale a 8");
+}
 
 if (numb5 + numb6 === 8) {
   console.log("la loro addizione è uguale a :8");
 } else {
-  console.log("non è uguale");
+  console.log("la loro addizione non è uguale a:8");
 }
 
 /* ESERCIZIO 5
